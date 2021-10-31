@@ -18,7 +18,7 @@
 [github地址](https://github.com/westhack/gin-myboot): https://github.com/westhack/gin-myboot
 
 
-# 其它
+# 相关项目
 [grpc-myboot - grpc 版](https://github.com/westhack/grpc-myboot): https://github.com/westhack/grpc-myboot
 
 
@@ -126,7 +126,7 @@ swag init
 
 ## 3. 技术选型
 
-- 前端：用基于 [Vue](https://vuejs.org) 的 [Element](https://github.com/ElemeFE/element) 构建基础页面。
+- 前端：用基于 [Vue](https://vuejs.org) 的 [Antdv](https://github.com/vueComponent/ant-design-vue) 构建基础页面。
 - 后端：用 [Gin](https://gin-gonic.com/) 快速搭建基础restful风格API，[Gin](https://gin-gonic.com/) 是一个go语言编写的Web框架。
 - 数据库：采用`MySql`(5.6.44)版本，使用 [gorm](http://gorm.cn) 实现对数据库的基本操作。
 - 缓存：使用`Redis`实现记录当前活跃用户的`jwt`令牌并实现多点登录限制。

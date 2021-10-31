@@ -28,7 +28,7 @@ myboot 是一套前后端完整的解决方案，后端部署请移步：
 
 ### 线上 Demo
 
-[http://laravel-vue.limaopu.com/](http://laravel-vue.limaopu.com/)
+[http://demo.limaopu.com/](http://demo.limaopu.com/)
 
 ### 界面预览
 <img src="./perview/1.png">
@@ -48,11 +48,11 @@ myboot 是一套前后端完整的解决方案，后端部署请移步：
 ## 快速开始
 
 ```sh
-# clone myboot-vue
-$ git clone https://github.com/westhack/myboot-vue.git
+# clone gin-myboot
+$ git clone https://github.com/westhack/gin-myboot.git
 
 # install dependency
-$ cd myboot-vue
+$ cd gin-myboot/backend-ui
 $ yarn install
 
 # develop
