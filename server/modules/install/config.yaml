@@ -1,0 +1,42 @@
+- label: MySql
+  name: mysql
+  type: single-dynamic-input
+  fields:
+    - label: 数据地址
+      name: path
+      type: input
+      value: '127.0.0.1:3306'
+    - label: 数据库名称
+      name: dbName
+      type: input
+      value: 'gin-myboot'
+    - label: 数据库用户
+      name: username
+      type: input
+      value: 'root'
+    - label: 数据库密码
+      name: password
+      type: password
+      value: 'root'
+
+- label: Redis
+  name: redis
+  type: single-dynamic-input
+  fields:
+    - label: 地址
+      name: addr
+      type: input
+      value: '127.0.0.1:6379'
+    - label: 数据库
+      name: db
+      type: input-number
+      value: 0
+      valueType: string
+    - label: 密码
+      name: password
+      type: password
+      value: ''
+- label: 是否自动初始化数据库
+  name: isInitDb
+  type: switch
+  value: true

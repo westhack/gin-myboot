@@ -1,0 +1,7 @@
+{
+  "name": "storage",
+  "title": "文件存储",
+  "version": "1.0.0",
+  "description": "上传下载，导入导出等",
+  "author": "westhack"
+}

@@ -1,0 +1,6 @@
+.git
+.gitignore
+vendor/
+tmp/
+log/
+install.lock

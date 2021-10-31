@@ -1,0 +1,482 @@
+app:
+  name:
+    label: name
+    name: name
+    type: input
+    value:
+  logo:
+    label: logo
+    name: logo
+    type: single-select-image
+    value:
+  abort:
+    label: abort
+    name: abort
+    type: editor
+    value:
+alidy:
+  accessKeyId:
+    label: accessKeyId
+    name: accessKeyId
+    type: input
+    value:
+  accessKeySecret:
+    label: accessKeySecret
+    name: accessKeySecret
+    type: input
+    value:
+  signName:
+    label: signName
+    name: signName
+    type: input
+    value:
+  templateCode:
+    label: templateCode
+    name: templateCode
+    type: input
+    value:
+  templateParam:
+    label: templateParam
+    name: templateParam
+    type: input
+    value:
+aliyunOSS:
+  accessKeyId:
+    label: accessKeyId
+    name: accessKeyId
+    type: input
+    value:
+  accessKeySecret:
+    label: accessKeySecret
+    name: accessKeySecret
+    type: input
+    value:
+  basePath:
+    label: basePath
+    name: basePath
+    type: input
+    value:
+  bucketName:
+    label: bucketName
+    name: bucketName
+    type: input
+    value:
+  bucketUrl:
+    label: bucketUrl
+    name: bucketUrl
+    type: input
+    value:
+  endpoint:
+    label: endpoint
+    name: endpoint
+    type: input
+    value:
+autocode:
+  root:
+    label: root
+    name: root
+    type: input
+    value: /Users/mac/Dev/go/gin-vue-admin
+  server:
+    label: server
+    name: server
+    type: input
+    value: /server
+  server-api:
+    label: server-api
+    name: server-api
+    type: input
+    value: /api/v1/autocode
+  server-initialize:
+    label: server-initialize
+    name: server-initialize
+    type: input
+    value: /initialize
+  server-model:
+    label: server-model
+    name:  server-model
+    type: input
+    value: /model/autocode
+  server-request:
+    label: server-request
+    name: server-request
+    type: input
+    value: /model/autocode/request/
+  server-router:
+    label: server-router
+    name: server-router
+    type: input
+    value: /router/autocode
+  server-service:
+    label: server-service
+    name: server-service
+    type: input
+    value: /service/autocode
+  transfer-restart:
+    label: transfer-restart
+    name: transfer-restart
+    type: boolean
+    value: true
+  web:
+    label: web
+    name: web
+    type: input
+    value: /web/src
+  web-api:
+    label: web-api
+    name: web-api
+    type: input
+    value: /api
+  web-flow:
+    label: web-flow
+    name: web-flow
+    type: input
+    value: /view
+  web-form:
+    label: web-form
+    name: web-form
+    type: input
+    value: /view
+  web-table:
+    label: web-table
+    name: web-table
+    type: input
+    value: /view
+captcha:
+  imgHeight:
+    label: 验证码宽度
+    name: imgHeight
+    type: input-number
+    value: 80
+  imgWidth:
+    label: 验证码高度
+    name: imgWidth
+    type: input-number
+    value: 240
+  keyLong:
+    label: 验证码长度
+    name: keyLong
+    type: input-number
+    value: 4
+casbin:
+  modelPath:
+    label: modelPath
+    name: modelPath
+    type: input
+    value: ./resource/rbac_model.conf
+email:
+  from:
+    label: from
+    name: from
+    type: input
+    value: xxx
+  host:
+    label: host
+    name: host
+    type: input
+    value: xxx
+  isSsl:
+    label: isSsl
+    name: isSsl
+    type: boolean
+    value: true
+  nickname:
+    label: nickname
+    name: nickname
+    type: input
+    value: xxx
+  port:
+    label: port
+    name: port
+    type: input
+    value: 465
+  secret:
+    label: secret
+    name: secret
+    type: input
+    value: xxx
+  to:
+    label: to
+    name: to
+    type: input
+    value: xxx@qq.com
+excel:
+  dir:
+    label: Excel 存储目录
+    name: dir
+    type: input
+    value: ./resource/excel/
+jwt:
+  bufferTime:
+    label: bufferTime
+    name: bufferTime
+    type: input
+    value: 86400
+  expiresTime:
+    label: JWT 过期时间（秒）
+    name: expiresTime
+    type: input
+    value: 604800
+  signingKey:
+    label: JWT key
+    name: signingKey
+    type: input
+    value: myBoot
+local:
+  path:
+    label: 本地上传路径
+    name: path
+    type: input
+    value: uploads/file
+mysql:
+  path:
+    label: path
+    name: path
+    type: input
+    value: 127.0.0.1:3306
+  config:
+    label: config
+    name: config
+    type: input
+    value: "charset=utf8mb4&parseTime=True&loc=Local"
+  dbName:
+    label: dbName
+    name: dbName
+    type: input
+    value: ""
+  username:
+    label: username
+    name: username
+    type: input
+    value: root
+  password:
+    label: password
+    name: password
+    type: password
+    value: root
+  maxIdleConns:
+    label: maxIdleConns
+    name: maxIdleConns
+    type: input
+    value: 0
+  maxOpenConns:
+    label: maxOpenConns
+    name: maxOpenConns
+    type: input
+    value: 0
+  logMode:
+    label: logMode
+    name: logMode
+    type: input
+    value: ""
+  logZap:
+    label: logZap
+    name: logZap
+    type: boolean
+    value: false
+qiniu:
+  accessKey:
+    label: accessKey
+    name: accessKey
+    type: input
+    value: ""
+  bucket:
+    label: bucket
+    name: bucket
+    type: input
+    value: ""
+  imgPath:
+    label: imgPath
+    name: imgPath
+    type: input
+    value: ""
+  secret-key:
+    label: nickname
+    name: nickname
+    type: input
+    value: ""
+  useCdnDomains:
+    label: useCdnDomains
+    name: useCdnDomains
+    type: boolean
+    value: false
+  useHttps:
+    label: useHttps
+    name: useHttps
+    type: boolean
+    value: false
+  zone:
+    label: zone
+    name: zone
+    type: input
+    value: ZoneHuaDong
+redis:
+  db:
+    label: db
+    name: db
+    type: input
+    value: 0
+  addr:
+    label: addr
+    name: addr
+    type: input
+    value: 127.0.0.1:6379
+  password:
+    label: password
+    name: password
+    type: password
+    value: root
+system:
+  addr:
+    label: addr
+    name: addr
+    type: input-number
+    value: 8888
+  dbType:
+    label: dbType
+    name: dbType
+    type: select
+    value: mysql
+    options:
+      - mysql
+  env:
+    label: env
+    name: env
+    type: input
+    value: public
+  ossType:
+    label: ossType
+    name: ossType
+    type: select
+    value: local
+    options:
+      -
+        label: 本地
+        value: local
+      -
+        label: 七牛
+        value: qiniu
+      -
+        label: 阿里云
+        value: aliyunOSS
+      -
+        label: 腾讯云
+        value: tencentCOS
+  useMultipoint:
+    label: useMultipoint
+    name: useMultipoint
+    type: boolean
+    value: true
+tencentCOS:
+  baseUrl:
+    label: baseUrl
+    name: baseUrl
+    type: input
+    value: https://gin.vue.admin
+  bucket:
+    label: bucket
+    name: bucket
+    type: input
+    value: xxxxx-10005608
+  pathPrefix:
+    label: pathPrefix
+    name: pathPrefix
+    type: input
+    value: gin-myboot
+  region:
+    label: region
+    name: region
+    type: input
+    value: ap-shanghai
+  secretId:
+    label: secretId
+    name: secretId
+    type: input
+    value: xxxxxxxx
+  secretKey:
+    label: nickname
+    name: nickname
+    type: input
+    value: xxxxxxxx
+timer:
+  detail:
+    label: detail
+    name: detail
+    type: single-dynamic-input
+    value:
+    fields:
+      compareField:
+        label: compareField
+        name: compareField
+        type: input
+        value: created_at
+      interval:
+        label: interval
+        name: interval
+        type: input
+        value: 2160h
+      tableName:
+        label: tableName
+        name: tableName
+        type: input
+        value: sys_user_logs
+  spec:
+    label: spec
+    name: spec
+    type: input
+    value: '@daily'
+  start:
+    label: start
+    name: start
+    type: boolean
+    value: true
+zap:
+  director:
+    label: director
+    name: director
+    type: input
+    value: log
+  encodeLevel:
+    label: encodeLevel
+    name: encodeLevel
+    type: input
+    value: LowercaseColorLevelEncoder
+  format:
+    label: format
+    name: format
+    type: input
+    value: console
+  level:
+    label: level
+    name: level
+    type: select
+    value: info
+    options:
+      - debug
+      - error
+      - info
+  linkName:
+    label: linkName
+    name: linkName
+    type: input
+    value: latest_log
+  logInConsole:
+    label: logInConsole
+    name: logInConsole
+    type: input
+    value: true
+  prefix:
+    label: prefix
+    name: prefix
+    type: input
+    value: '[GIN-MYBOOT]'
+  showline:
+    label: showline
+    name: showline
+    type: boolean
+    value: true
+  stacktraceKey:
+    label: stacktraceKey
+    name: stacktraceKey
+    type: input
+    value: stacktrace

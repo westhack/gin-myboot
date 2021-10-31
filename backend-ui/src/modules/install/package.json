@@ -1,0 +1,9 @@
+{
+  "name": "myboot-module-install",
+  "title": "install",
+  "version": "1.0.0",
+  "description": "install",
+  "author": "install",
+  "dependencies": {},
+  "devDependencies": {}
+}

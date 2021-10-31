@@ -1,0 +1,7 @@
+{
+  "name": "system",
+  "title": "系统业务",
+  "version": "1.0.0",
+  "description": "用户管理，权限认证等",
+  "author": "westhack"
+}

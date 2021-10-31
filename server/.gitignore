@@ -1,0 +1,6 @@
+tmp
+log
+vendor
+uploads
+.idea/*
+install.lock
