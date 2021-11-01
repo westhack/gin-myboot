@@ -1,7 +1,6 @@
 const layouts = {
   'headerCenter': {
-    ReloadSystem: () => import('@/modules/system/components/ReloadSystem.vue'),
-    Message: () => import('@/modules/websocket/components/Message.vue')
+    ReloadSystem: () => import('@/modules/system/components/ReloadSystem.vue')
   }
 }
 

@@ -19,7 +19,7 @@ export const defaultFormData = [
     label: '{{.FieldDesc}}',
     type: '{{.InputType}}',
     value: null,
-    rules: [{{range $v := .InputRules}}{{$v}}{{- end }}]
+    rules: [{{range $v := .InputRules}}{{$v}},{{- end }}]
   },{{end}}
 {{- end }}
 ]
@@ -40,7 +40,7 @@ export const columns = [
     align: '{{.TableAlign}}',
     width: '{{.TableWidth}}',
     type: '{{.InputType}}',
-    value: '',
+    value: null,
     editable: {{if .InputType}}true{{else}}false{{end}},
     isSearch: {{if .FieldSearchType}}true{{else}}false{{end}},
     isForm: {{if .InputType}}true{{else}}false{{end}},

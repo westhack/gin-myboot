@@ -60,7 +60,7 @@ export const fields = [
   {
     'label': '表单规则',
     'name': 'inputRules',
-    'value': null,
+    'value': [],
     'type': 'multiple-select',
     'options': [{ label: '不能为空', value: '{ required: true, message: \'不能为空\' }' }]
   },

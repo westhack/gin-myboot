@@ -59,7 +59,7 @@
 
       <div v-show="noTitleKey === 'preview'">
 
-        <a-tabs default-active-key="0">
+        <a-tabs default-active-key="0" tab-position="left">
           <a-tab-pane :key="i" :tab="i" v-for="(source, i) in sources">
             <a-button icon="copy" @click="copy(source)">复制</a-button>
             <vue-markdown :source="source" style="background: #e8e8e8;padding: 5px;margin-top: 5px"></vue-markdown>
@@ -164,7 +164,6 @@ export default {
     simplebar
   },
   data () {
-    const vm = this
     return {
       active: 1,
       formLayout: 'inline',
@@ -252,6 +251,7 @@ export default {
           v['fieldSearchType'] = '='
           v['tableAlign'] = 'left'
           v['tableWidth'] = '100px'
+          v['inputRules'] = null
         })
       })
     },
@@ -456,6 +456,7 @@ export default {
           column['fieldSearchType'] = '='
           column['tableAlign'] = 'left'
           column['tableWidth'] = '100px'
+          column['inputRules'] = null
           columns.push(_.cloneDeep(column))
         })
 

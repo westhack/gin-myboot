@@ -2,4 +2,4 @@
 
 ## Reporting a Vulnerability
 
-Please report security issues to qimiaojiangjizhao@gmail.com
+Please report security issues to westhack@limaopu.com
