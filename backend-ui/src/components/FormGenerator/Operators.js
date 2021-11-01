@@ -42,7 +42,7 @@ export const operators = [
   },
   {
     label: '以开始',
-    value: 'likeRight'
+    value: 'likeLeft'
   },
   {
     label: '以结尾i',

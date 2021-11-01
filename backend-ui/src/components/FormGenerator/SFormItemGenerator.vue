@@ -546,7 +546,6 @@
 </template>
 
 <script>
-import { TreeSelect } from 'ant-design-vue'
 import SingleImageUpload from '@/components/Upload/SingleImageUpload'
 import FileUpload from '@/components/Upload/FileUpload'
 import MultipleImageUpload from '@/components/Upload/MultipleImageUpload'
@@ -948,7 +947,7 @@ export default {
         if (!(this.item.mode === 'multiple' || this.item.multiple === true)) {
           if (value != null) {
           } else {
-            value = null
+            value = []
           }
         }
       } else if (this.item.type === 'file') {
@@ -995,13 +994,13 @@ export default {
           value = value.split(',')
         }
       } else if (this.item.type === 'multiple-select') {
-        if (value == null || value == '') {
-          value = undefined
-        } else {
-          if (_.isString(value)) {
-            value = value.split(',')
-          }
-        }
+        // if (value == null || value == '') {
+        //   value = []
+        // } else {
+        //   if (_.isString(value)) {
+        //     value = value.split(',')
+        //   }
+        // }
       } else if (this.item.type === 'cascader') {
         if (value == null || value == '') {
           value = []
