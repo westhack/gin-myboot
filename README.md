@@ -58,7 +58,7 @@
 
 ```
 - node版本 > v8.6.0
-- golang版本 >= v1.14
+- golang版本 >= v1.17
 - IDE推荐：Goland
 ```
 

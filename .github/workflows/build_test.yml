@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [12.13]
     steps:
       - name: Check out branch
         uses: actions/checkout@v2
@@ -32,18 +32,22 @@ jobs:
 
       - name: Build test
         run: |
-          npm install
-          npm run build
+        apt-get update && apt-get install -y curl apt-transport-https && \
+    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
+    echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && \
+    apt-get update && apt-get install -y yarn \
+          yarn install
+          yarn build
         working-directory: ./backend-ui
 
   backend:
     name: Backend build
     runs-on: ubuntu-latest
     steps:
-      - name: Set up Go 1.14
+      - name: Set up Go 1.17
         uses: actions/setup-go@v1
         with:
-          go-version: 1.14
+          go-version: 1.17
         id: go
 
       - name: Check out branch

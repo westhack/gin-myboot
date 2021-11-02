@@ -36,7 +36,7 @@ registry=https://r.npm.taobao.org
 ` 
 -->
 
-### 3. 您使用的是哪个版本的 `gin-vue-admin` ?
+### 3. 您使用的是哪个版本的 `gin-myboot` ?
 
 <!-- 
 您如果克隆的是master就写master, 
