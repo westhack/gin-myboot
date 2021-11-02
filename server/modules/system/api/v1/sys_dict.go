@@ -2,6 +2,7 @@ package v1
 
 import (
 	"gin-myboot/global"
+	commonRequest "gin-myboot/modules/common/model/request"
 	"gin-myboot/modules/common/model/response"
 	system "gin-myboot/modules/system/model"
 	"gin-myboot/modules/system/model/request"
@@ -42,13 +43,33 @@ func (s *DictApi) Create(c *gin.Context) {
 // @Success 200 {string} string "{"success":true,"data":{},"msg":"删除成功"}"
 // @Router /v1/system/dict/delete [post]
 func (s *DictApi) Delete(c *gin.Context) {
-	var dict system.SysDict
-	_ = c.ShouldBindJSON(&dict)
-	if err := dictService.Delete(dict); err != nil {
+	var id commonRequest.GetById
+	_ = c.ShouldBindJSON(&id)
+	if err := dictService.Delete(id.ID); err != nil {
 		global.Logger.Error("删除失败!", zap.Any("err", err))
 		response.FailWithMessage("删除失败" + err.Error(), c)
 	} else {
 		response.OkWithMessage("删除成功", c)
+	}
+}
+
+// DeleteByIds
+// @Tags SysDict
+// @Summary 批量删除SysDict
+// @Security ApiKeyAuth
+// @accept application/json
+// @Produce application/json
+// @Param data body system.SysDict true "SysDict模型"
+// @Success 200 {string} string "{"success":true,"data":{},"msg":"删除成功"}"
+// @Router /v1/system/dict/deleteByIds [post]
+func (s *DictApi) DeleteByIds(c *gin.Context) {
+	var ids commonRequest.GetByIds
+	_ = c.ShouldBindJSON(&ids)
+	if err := dictService.DeleteByIds(ids.ID); err != nil {
+		global.Logger.Error("批量删除失败!", zap.Any("err", err))
+		response.FailWithMessage("批量删除失败" + err.Error(), c)
+	} else {
+		response.OkWithMessage("批量删除成功", c)
 	}
 }
 

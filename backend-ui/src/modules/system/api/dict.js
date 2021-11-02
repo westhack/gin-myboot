@@ -7,6 +7,7 @@ const dict = {
   dictCreate: API_VERSION + '/dict/create',
   dictUpdate: API_VERSION + '/dict/update',
   dictDelete: API_VERSION + '/dict/delete',
+  dictDeleteByIds: API_VERSION + '/dict/deleteByIds',
   dictAll: API_VERSION + '/dict/getAll',
   saveDictDetail: API_VERSION + '/dict/saveDetail'
 }
@@ -25,6 +26,11 @@ export function dictUpdate (parameter) {
 
 export function dictDelete (parameter) {
   return axios({ url: dict.dictDelete, method: 'post', data: parameter
+  })
+}
+
+export function dictDeleteByIds (parameter) {
+  return axios({ url: dict.dictDeleteByIds, method: 'post', data: parameter
   })
 }
 

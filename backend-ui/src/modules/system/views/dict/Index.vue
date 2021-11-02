@@ -93,7 +93,7 @@
 <script>
 import { httpResponseCode } from '@/constants/httpResponseCode'
 import {
-  getDictList, dictCreate, dictUpdate, dictDelete, saveDictDetail
+  getDictList, dictCreate, dictUpdate, dictDeleteByIds, saveDictDetail
 } from '@/modules/system/api/dict'
 import { STable } from '@/components'
 import DictInput from '@/components/Form/DictInput'
@@ -245,7 +245,7 @@ export default {
         okType: 'danger',
         cancelText: '取消',
         onOk () {
-          dictDelete({ id: id })
+          dictDeleteByIds({ id: id })
             .then((res) => that.submitSuccess(res))
             .then((res) => {
               if (res.code === httpResponseCode.SUCCESS) {

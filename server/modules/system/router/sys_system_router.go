@@ -81,18 +81,19 @@ func (s *SystemRouter) InitSystemRouter(Router *gin.RouterGroup) {
 		sysRouter.POST("config/setValue", systemApiGroup.ConfigApi.SetValue)
 		sysRouter.POST("config/write", systemApiGroup.ConfigApi.Write) // 配置写入到文件
 
-		sysRouter.POST("dict/create", systemApiGroup.DictApi.Create)   // 新建SysDict
-		sysRouter.POST("dict/delete", systemApiGroup.DictApi.Delete)   // 删除SysDict
-		sysRouter.POST("dict/update", systemApiGroup.DictApi.Update)   // 更新SysDict
-		sysRouter.GET("dict/find", systemApiGroup.DictApi.Find)    // 根据ID获取SysDict
-		sysRouter.POST("dict/getList", systemApiGroup.DictApi.GetList) // 获取SysDict列表
+		sysRouter.POST("dict/create", systemApiGroup.DictApi.Create)           // 新建SysDict
+		sysRouter.POST("dict/delete", systemApiGroup.DictApi.Delete)           // 删除SysDict
+		sysRouter.POST("dict/deleteByIds", systemApiGroup.DictApi.DeleteByIds) // 批量删除SysDict
+		sysRouter.POST("dict/update", systemApiGroup.DictApi.Update)           // 更新SysDict
+		sysRouter.GET("dict/find", systemApiGroup.DictApi.Find)                // 根据ID获取SysDict
+		sysRouter.POST("dict/getList", systemApiGroup.DictApi.GetList)         // 获取SysDict列表
 		sysRouter.GET("dict/getAll", systemApiGroup.DictApi.GetAll)
 		sysRouter.POST("dict/saveDetail", systemApiGroup.DictApi.SaveDetail)
 
 		sysRouter.POST("dictDetail/create", systemApiGroup.DictDetailApi.Create)   // 新建SysDictDetail
 		sysRouter.POST("dictDetail/delete", systemApiGroup.DictDetailApi.Delete)   // 删除SysDictDetail
 		sysRouter.POST("dictDetail/update", systemApiGroup.DictDetailApi.Update)   // 更新SysDictDetail
-		sysRouter.GET("dictDetail/find", systemApiGroup.DictDetailApi.Find)    // 根据ID获取SysDictDetail
+		sysRouter.GET("dictDetail/find", systemApiGroup.DictDetailApi.Find)        // 根据ID获取SysDictDetail
 		sysRouter.POST("dictDetail/getList", systemApiGroup.DictDetailApi.GetList) // 获取SysDictDetail列表
 
 		sysRouter.POST("message/getList", systemApiGroup.MessageApi.GetList)

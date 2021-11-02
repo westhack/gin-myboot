@@ -29,8 +29,33 @@ func (dictService *DictService) Create(sysDict system.SysDict) (err error) {
 // @description: 删除字典数据
 // @param: sysDict model.SysDict
 // @return: err error
-func (dictService *DictService) Delete(sysDict system.SysDict) (err error) {
+func (dictService *DictService) Delete(id uint64) (err error) {
+
+	var sysDict system.SysDict
+
+	err = global.GormDB.Where("id =?", id).Preload("DictDetails").First(&sysDict).Error
+	if err != nil {
+		return err
+	}
+
 	err = global.GormDB.Delete(&sysDict).Delete(&sysDict.DictDetails).Error
+	return err
+}
+
+// DeleteByIds
+// @function: DeleteByIds
+// @description: 批量删除字典数据
+// @param: sysDict model.SysDict
+// @return: err error
+func (dictService *DictService) DeleteByIds(ids []uint64) (err error) {
+
+	for _, id := range ids {
+		err := dictService.Delete(id)
+		if err != nil {
+			return err
+		}
+	}
+
 	return err
 }
 
