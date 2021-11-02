@@ -10,7 +10,7 @@ function isModule (source) {
   if (!fs.lstatSync(source).isDirectory()) {
     return false
   }
-  const routerPath = path.resolve(source, './router.js')
+  const routerPath = path.resolve(source, './router.config.js')
   const packagePath = path.resolve(source, './package.json')
   if (result && !fs.existsSync(routerPath)) {
     result = false

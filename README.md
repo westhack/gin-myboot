@@ -1,6 +1,6 @@
 
 <div align=center>
-<img src="./backend-ui/public/assets/logo.png" width=300" height="300" />
+<img src="https://i.loli.net/2021/11/02/5dZV1Oqoxc4R76G.png" width=300" height="300" />
 </div>
 <div align=center>
 <img src="https://img.shields.io/badge/golang-1.14-blue"/>
@@ -19,11 +19,28 @@
 
 
 # 相关项目
-[grpc-myboot - grpc 版](https://github.com/westhack/grpc-myboot): https://github.com/westhack/grpc-myboot
 
+- [spring-myboot](https://github.com/westhack/spring-myboot): https://github.com/westhack/spring-myboot
+
+- [spring-myboot](https://github.com/westhack/laravel-myboot): https://github.com/westhack/laravel-myboot
+
+- [grpc-myboot - grpc 版](https://github.com/westhack/grpc-myboot): https://github.com/westhack/grpc-myboot
 
 # 项目文档
 [在线文档](http://docs.limaopu.com) : http://docs.limaopu.com
+
+
+# 截图预览
+
+![1.png](https://i.loli.net/2021/11/02/4UikFAHnQO7lJsb.png)
+
+![2.png](https://i.loli.net/2021/11/02/sHGh3qwnoNLptRO.png)
+
+![3.png](https://i.loli.net/2021/11/02/z95V1ntGjKr48xo.png)
+
+![4.png](https://i.loli.net/2021/11/02/AH9vaCQGq2en6uR.png)
+
+![5.png](https://i.loli.net/2021/11/02/xhRFwXJfuHIKZcT.png)
 
 ## 1. 基本介绍
 
@@ -192,11 +209,11 @@ swag init
 - api管理：不同用户可调用的api接口的权限不同。
 - 配置管理：配置文件可前台修改。
 - 缓存管理：管理reids缓存。
-- 条件搜索：增加条件搜索示例。
+- 条件搜索：动态自定义多条件搜索。
 - restful示例：可以参考用户管理模块中的示例API。
-	- 前端文件参考: [/backend-ui/src/modules/system/user/Index.vue](https://github.com/westhack/gin-myboot/blob/master/backend-ui/src/modules/system/user/Index.vue)
-    - 后台文件参考: [/server/modules/system/api/v1/sys_user.go](https://github.com/westhack/gin-myboot/blob/master/server/modules/system/api/v1/sys_user.go)
+	- 前端文件参考: [/backend-ui/src/modules/system/user/Index.vue](https://github.com/westhack/gin-myboot/blob/main/backend-ui/src/modules/system/user/Index.vue)
+    - 后台文件参考: [/server/modules/system/api/v1/sys_user.go](https://github.com/westhack/gin-myboot/blob/main/server/modules/system/api/v1/sys_user.go)
 - 多点登录限制：需要在`config.yaml`中把`system`中的`use-multipoint`修改为true(需要自行配置Redis和Config中的Redis参数，测试阶段，有bug请及时反馈)。
 - 分片长传：提供文件分片上传和大文件分片上传功能示例。
-- 表单生成器：参考 [/backend-ui/src/modules/demo/views/view1.vue](https://github.com/westhack/gin-myboot/blob/master/backend-ui/src/modules/demo/views/view1.vue) 。
+- 表单生成器：参考 [/backend-ui/src/modules/demo/views/view1.vue](https://github.com/westhack/gin-myboot/blob/main/backend-ui/src/modules/demo/views/view1.vue) 。
 - 代码生成器：后台基础逻辑以及简单curd的代码生成器。

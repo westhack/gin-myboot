@@ -1,5 +1,5 @@
 import { constantRouterMap } from '@/config/router.config'
-import moduleConfig from '@/router/moduleRouterConfig'
+import moduleConfig from '@/router/module.router.config'
 import { generatorDynamicRouter } from '@/router/generatorRouters'
 
 const permission = {

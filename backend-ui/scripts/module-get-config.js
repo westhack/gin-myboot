@@ -5,7 +5,7 @@ const chalk = require('chalk')
 const ejs = require('ejs')
 const getAllPlugin = require('./lib/module-get-all')
 
-const targetDir = path.resolve(__dirname, '../src/router/moduleRouterConfig.js')
+const targetDir = path.resolve(__dirname, '../src/router/module.router.config.js')
 const modulesPath = path.resolve(__dirname, '../src/modules')
 const templatePath = path.resolve(__dirname, './template/module-router-config.js.ejs')
 
