@@ -32,7 +32,7 @@ func RunWindowsServer() {
     加群方式:微信号：westhack
 	默认自动化文档地址:http://127.0.0.1%v/swagger/index.html
 	默认前端文件运行地址:http://127.0.0.1:8000
-	如果项目让您获得了收益，请 star :https://github.com/westhack/grpc-myboot
+	如果项目让您获得了收益，请 star :https://github.com/westhack/gin-myboot
 `, address)
 	global.Logger.Error(s.ListenAndServe().Error())
 }

@@ -21,13 +21,6 @@ router.beforeEach((to, from, next) => {
     return
   }
 
-  // const dict = storage.get('DICT')
-  // if (dict) {
-  //   $store.commit('SET_DICT', dict)
-  // } else {
-  store.dispatch('DictAll')
-  // }
-
   if (storage.get(ACCESS_TOKEN)) {
     /* has token */
     if (to.path === '/user/login') {
@@ -75,6 +68,12 @@ router.beforeEach((to, from, next) => {
             }
           })
       } else {
+        // const dict = storage.get('DICT')
+        // if (dict) {
+        //   $store.commit('SET_DICT', dict)
+        // } else {
+        store.dispatch('DictAll')
+        // }
         store.dispatch('GetUserMessages')
         next()
       }

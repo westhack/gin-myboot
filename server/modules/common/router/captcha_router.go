@@ -10,13 +10,11 @@ type CaptchaRouter struct {
 }
 
 func (s *AuthRouter) InitCaptchaRouter(Router *gin.RouterGroup) {
-	router := Router.Group("v1/common/captcha").Use(middleware.SystemLog())
+	router := Router.Group("v1/common/captcha")
 
 	var api = api.ApiGroupApp.CaptchaApi
 	{
 		router.GET("get", api.Captcha)
-		router.POST("sendSms", api.SendSms)
+		router.Use(middleware.CaptchaValidate()).POST("sendSms", api.SendSms)
 	}
 }
-
-
